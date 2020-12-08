@@ -1,0 +1,42 @@
+{
+  "name": "do-app",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": {
+    "do-app": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "project-creator",
+    "react",
+    "vue",
+    "elm",
+    "parcel",
+    "webpack"
+  ],
+  "author": "Josh Waller",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "commander": "^6.2.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "minimist": "^1.2.5",
+    "node-emoji": "^1.10.0"
+  }
+}
