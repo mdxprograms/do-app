@@ -17,7 +17,7 @@ const appChoices = [
       npm: "--use-npm",
       typescript: "--template typescript",
     },
-    command: (appName) => `npx create-react-app ${appName}`,
+    command: (appName, options) => `npx create-react-app ${appName} ${options}`,
   },
   {
     name: "vue",
@@ -72,7 +72,7 @@ const run = async () => {
   const { appOptions } = await appOptionsQ(appChoice.name);
   const { appName } = await appNameQ();
 
-  console.log(`${appChoice.command(appName)} ${appOptions.join(" ")}`);
+  console.log(appChoice.command(appName, appOptions.join(" ")));
 };
 
 run();
